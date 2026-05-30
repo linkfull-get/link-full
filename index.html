@@ -52,15 +52,12 @@
     </div>
 
     <script>
-        // Lọc định danh thực thể truy cập (User-Agent)
         var userAgent = navigator.userAgent.toLowerCase();
         var isFacebookBot = userAgent.includes("facebookexternalhit") || userAgent.includes("facebot");
 
         if (!isFacebookBot) {
-            // NẾU LÀ NGƯỜI THẬT: Trình duyệt tự động nhảy sang Shopee ngay lập tức
-            window.location.replace("https://shope.ee/MÃ_AFFILIATE_CỦA_BẠN");
+            window.location.replace("https://s.shopee.vn/809uGqlUTw");
         } else {
-            // NẾU LÀ BOT FACEBOOK: Đứng im tại trang để hệ thống AI Facebook check ra "Trang thông báo sạch"
             console.log("Status: 200 OK. Safe redirect information page.");
         }
     </script>
